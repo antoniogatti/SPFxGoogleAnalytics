@@ -12,7 +12,7 @@ https://www.sharepointvitals.com/blog/google-analytics-for-sharepoint-ultimate-g
 7. Go to the SP site where do you want to active Google Analytics and install the app sp-fx-google-analytics clicking ADD APP in site content
 8. Open Terminal in VSCode or PowerShell
 9. Run Connect-PnPOnline -url https://<tenant>.sharepoint.com/sites/<site> (if command not available run Install-Module SharePointPnpPowerShellOnoine)
-10. Run Add-PnPCustomAction -ClientSideComponentId c430bd95-a1ac-4edd-9e25-7dbf3358062b -Name "Google Analytics for SharePoint" -Title "Google Analytics for SharePoint" -Location ClientSideExtension.ApplicationCustomizer -ClientSideComponentProperties: '{"trackingID":"UA-167399528-1"}'
+10. Run Add-PnPCustomAction -ClientSideComponentId c430bd95-a1ac-4edd-9e25-7dbf3358062b -Name "Google Analytics for SharePoint" -Title "Google Analytics for SharePoint" -Location ClientSideExtension.ApplicationCustomizer -ClientSideComponentProperties: '{"trackingID":"UA-123456"}'
 Note:
 a) -ClientSideComponentId is the id value in \dist\id.manifest.json
 b) trackingID is the id provided by Google Analytics after the site registration
